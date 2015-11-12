@@ -1,0 +1,49 @@
+\documentclass[12pt]{report}
+
+\usepackage{graphicx, probsoln}
+
+\pagestyle{myheadings}
+\newsavebox{\mybox}
+\renewenvironment{solution}{\par\noindent\begin{lrbox}{\mybox}}{\end{lrbox}\fbox{\usebox{\mybox}}}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\voffset}{-.75in}
+\setlength{\textheight}{9in}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% MAKE CHANGES BELOW %
+%%%%%%%%%%%%%%%%%%%%%%
+\markright{MAT 100\hfill Midterm Exam Question Bank\hfill Page }
+
+\begin{document}
+
+\loadallproblems{Bank100Midterm01}
+\loadallproblems{Bank100Midterm02}
+\loadallproblems{Bank100Midterm03}
+\loadallproblems{Bank100Midterm04}
+\loadallproblems{Bank100Midterm05}
+\loadallproblems{Bank100Midterm05weather}
+\loadallproblems{Bank100Midterm06}
+\loadallproblems{Bank100Midterm07}
+\loadallproblems{Bank100Midterm08}
+\loadallproblems{Bank100Midterm09}
+\loadallproblems{Bank100Midterm10}
+\loadallproblems{Bank100Midterm11}
+\loadallproblems{Bank100Midterm12}
+\loadallproblems{Bank100Midterm13}
+\loadallproblems{Bank100Midterm14}
+\loadallproblems{Bank100Midterm15}
+\loadallproblems{Bank100Midterm16}
+\loadallproblems{Bank100Midterm17}
+\loadallproblems{Bank100Midterm18}
+\loadallproblems{Bank100Midterm19}
+\loadallproblems{Bank100Midterm20}
+
+\showanswers
+\begin{enumerate}
+  \foreachproblem{\item[\thisproblemlabel.]\thisproblem}
+\end{enumerate}
+
+\end{document}

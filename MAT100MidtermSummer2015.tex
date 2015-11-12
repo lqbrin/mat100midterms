@@ -1,0 +1,101 @@
+\documentclass[12pt]{report}
+
+\usepackage{graphicx, probsoln}
+
+\pagestyle{myheadings}
+\newsavebox{\mybox}
+\newcounter{probnum}
+\renewenvironment{solution}{\par\noindent\begin{lrbox}{\mybox}}{\end{lrbox}\fbox{\usebox{\mybox}}}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\voffset}{-.75in}
+\setlength{\textheight}{9in}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% MAKE CHANGES BELOW %
+%%%%%%%%%%%%%%%%%%%%%%
+\markright{MAT 100/102 Summer 2015\hfill Midterm Exam\hfill Page }
+\newcommand{\pts}{[10 points] }
+\newcommand{\spc}{\vfill }
+% Pick a new seed for each new exam. Must be a positive integer!
+% Seeds used:
+% Spring 2015: 400, 500, 600
+% Summer 2015: 300
+\PSNrandseed{300}
+
+\begin{document}
+
+\noindent {Name and section:\enspace\hrulefill}
+
+\vspace{.25in}
+
+\noindent {Instructor's name:\enspace\hrulefill}
+
+\vspace{.25in}
+
+\begin{center}\fbox{\fbox{\parbox{5.5in}{
+  \begin{itemize}
+    \item \textbf{Please do not open exam until instructed to begin.}
+    \item This exam is to be completed in the allotted time period of $50$ minutes.
+    \item There are $20$ problems which appear on the fronts and backs of the pages of this exam. 
+    \item You may earn a total of $124$ points. 
+    \item Read each question carefully.
+    \item Credit may not be given without sufficient supporting work. 
+    \item Simplify answers when possible. 
+    \item The use of cell phones, books, or notes are not permitted while taking this exam. 
+    \item Approved calculators are allowed.
+  \end{itemize} }}}
+\end{center}
+
+\loadrandomproblems{1}{Bank100Midterm01}
+\loadrandomproblems{1}{Bank100Midterm02}
+\loadrandomproblems{1}{Bank100Midterm03}
+\loadrandomproblems{1}{Bank100Midterm04}
+\loadrandomproblems{1}{Bank100Midterm05}
+%\loadrandomproblems{1}{Bank100Midterm05weather}
+\loadrandomproblems{1}{Bank100Midterm06}
+\loadrandomproblems{1}{Bank100Midterm07}
+\loadrandomproblems{1}{Bank100Midterm08}
+\loadrandomproblems{1}{Bank100Midterm09}
+\loadrandomproblems{1}{Bank100Midterm10}
+\loadrandomproblems{1}{Bank100Midterm11}
+\loadrandomproblems{1}{Bank100Midterm12}
+\loadrandomproblems{1}{Bank100Midterm13}
+\loadrandomproblems{1}{Bank100Midterm14}
+\loadrandomproblems{1}{Bank100Midterm15}
+\loadrandomproblems{1}{Bank100Midterm16}
+\loadrandomproblems{1}{Bank100Midterm17}
+\loadrandomproblems{1}{Bank100Midterm18}
+\loadrandomproblems{1}{Bank100Midterm19}
+\loadrandomproblems{1}{Bank100Midterm20}
+
+\newpage
+\begin{enumerate}
+  \foreachproblem{
+    \stepcounter{probnum}
+    \ifnum \value{probnum}=4
+	  \item\thisproblem\spc\newpage		% go to next page after problem 4
+    \else \ifnum \value{probnum}=8
+	  \item\thisproblem\spc\newpage 	% go to next page after problem 8
+    \else \ifnum \value{probnum}=11
+	  \item\thisproblem\spc\newpage 	% go to next page after problem 11
+    \else \ifnum \value{probnum}=14
+	  \item\thisproblem\spc\newpage 	% go to next page after problem 14
+    \else \ifnum \value{probnum}=17
+	  \item\thisproblem\spc\newpage 	% go to next page after problem 17
+    \else
+	  \item\thisproblem\spc 		% default
+    \fi\fi\fi\fi\fi
+  }
+\end{enumerate}
+
+\newpage
+\showanswers
+\begin{center}\textbf{\Large{Solutions}}\end{center}
+\begin{enumerate}
+  \foreachsolution{\item\thisproblem}
+\end{enumerate}
+
+\end{document}
